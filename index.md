@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Welcome to AGNET Docs
 
-You can use the [editor on GitHub](https://github.com/agPrograms/agPrograms.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+This is a basic documentation page to learn more about AGNET and for my own personal documentation of the API as it is created.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### What is AGNET?
 
-### Markdown
+AGNET is a foundation for the internet, in minecraft. Combined with the desktop client, webservers, and BOSS server -- it allows users to create whatever they wish!
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### What is AGNET coded in?
 
-```markdown
-Syntax highlighted code block
+AGNET is primarly coded in **Lua**.
 
-# Header 1
-## Header 2
-### Header 3
+### Index
+- [Download & Use AGNET](#download-and-use-agnet)
+- [Deploy AGNET](#deploy-agnet-boss-and-webservices)
 
-- Bulleted
-- List
+### Download and Use AGNET
+Here are the current resources for AGNET:
+- **AGNET Desktop**: pastebin coming soon! **Github Repo**: github coming soon!
+- **AGNET Boss Server**: pastebin coming soon! **Github Repo**: github coming soon!
+- **AGNET Webservices**: pastebin coming soon! **Github Repo**: github coming soon!
 
-1. Numbered
-2. List
+### Deploy AGNET BOSS and Webservices
+In order for the AGNET Network/Internet Service to work, the the AGNET Boss Server is required to be set up FIRST. The AGNET Boss stores user information and data about the network. ***Note: AGNET BOSS Server does NOT record passwords natively. The BOSS Server records the Computer ID the desktop/client user is currently registering with.***
 
-**Bold** and _Italic_ and `Code` text
+If you have not already, download the AGNET BOSS Server script/client [here](#download-and-use-agnet)
 
-[Link](url) and ![Image](src)
-```
+Next, follow the setup on screen. The setup is easy and guides you through the whole process. The Boss server will advertise by brodcasting with the specific AGNET protocol, and will indicate it is ready to accept client connections. **The same for webservices**.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+[Back to Index](#index)
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/agPrograms/agPrograms.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## More to come!
