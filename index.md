@@ -13,6 +13,7 @@ AGNET is primarly coded in **Lua**.
 ### Index
 - [Download & Use AGNET](#download-and-use-agnet)
 - [Deploy AGNET](#deploy-agnet-boss-and-webservices)
+- [BOSS API](https://agprograms.github.com/bossapi.md)
 
 ### Download and Use AGNET
 Here are the current resources for AGNET:
