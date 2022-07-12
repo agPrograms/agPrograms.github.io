@@ -14,6 +14,7 @@ AGNET is primarly coded in **Lua**.
 - [Download & Use AGNET](#download-and-use-agnet)
 - [Deploy AGNET](#deploy-agnet-boss-and-webservices)
 - [BOSS API](https://agprograms.github.com/bossapi.md/)
+- [Auth API](#auth-api)
 
 ### Download and Use AGNET
 Here are the current resources for AGNET:
@@ -27,6 +28,18 @@ In order for the AGNET Network/Internet Service to work, the the AGNET Boss Serv
 If you have not already, download the AGNET BOSS Server script/client [here](#download-and-use-agnet)
 
 Next, follow the setup on screen. The setup is easy and guides you through the whole process. The Boss server will advertise by brodcasting with the specific AGNET protocol, and will indicate it is ready to accept client connections. **The same for webservices**.
+
+[Back to Index](#index)
+
+### Auth API
+```lua
+require(/settings.lua) -- get srvSel global
+agProtocol = 'AUTH-AGNET'
+agLocal = tostring(os.getcomputerID())
+local event, sender, message, protocol = os.pullEvent("rednet_message")
+rednet.send(srvSel, agLocal, agProtocol)
+```
+The **agProtocol** is a defined *global string* to be used in the ```lua  rednet.send(args)``` command, under protocol. When sending a message with this protocol, the Boss Server will filter and engage the proper **LOGINREQ.SYS** function in the API. Within this function, the Boss Server will check for the **sender**'s file within its local file system. Formatted as /usrs/**sender**.usr. If the user exists, it will return the sender's **screenname**. If the **screenname** matches the screenname stored on the client's machine's *settings.lua* then the Boss Server will pass **LOGIN.SUCCESS** via a string in ```lua rednet.send(sender,'LOGIN.SUCCESS',agProtocol)```. To which the client begins to actively receive and look for that message after it receives the **LOGIN.SYS** response.
 
 [Back to Index](#index)
 
